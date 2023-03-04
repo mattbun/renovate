@@ -2,7 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base",
-    "group:allNonMajor",
     "group:nodeJs",
     ":pinAllExceptPeerDependencies",
     "schedule:monthly"
@@ -14,11 +13,6 @@
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true
-    },
-    {
-      "matchPackagePatterns": [ "typescript" ],
-      "groupName": "typescript",
-      "groupSlug": "typescript"
     }
   ]
 }
