@@ -14,3 +14,10 @@ Put this in `renovate.json`:
   ]
 }
 ```
+
+Node.js docker image updates require the Node.js version to be in an `ARG`, like this:
+
+```dockerfile
+ARG NODE_VERSION=18.14.2
+FROM node:${NODE_VERSION}-alpine AS build
+```
