@@ -27,14 +27,14 @@
       "automerge": true
     },
     {
-      "matchPackagePatterns": [ "node", "@types/node" ],
+      "matchPackageNames": [ "node", "@types/node" ],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "groupName": "Node.js",
       "groupSlug": "nodejs-minor",
       "semanticCommitType": "fix"
     },
     {
-      "matchPackagePatterns": [ "node", "@types/node" ],
+      "matchPackageNames": [ "node", "@types/node" ],
       "matchUpdateTypes": ["major"],
       "groupName": "Node.js",
       "groupSlug": "nodejs-major",
